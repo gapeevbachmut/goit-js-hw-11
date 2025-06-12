@@ -1,0 +1,177 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Philosopher", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 2px;
+}
+
+h1 {
+  text-align: center;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1140px;
+}
+
+.container-img {
+  max-height: 500px;
+  max-width: 500px;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 50% 20% / 10% 40%;
+
+}
+
+.title-img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+  transition: transform 4s linear;
+}
+
+.title-img:hover,
+.title-img:focus {
+  transform: scale(2);
+
+}
+
+.title {
+  text-align: center;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.navigation {
+  text-align: center;
+  list-style-type: none;
+
+}
+
+.navigation li {
+  margin-bottom: 16px;
+  /* background-color: rgb(42, 45, 32); */
+}
+
+.navigation li a {
+  font-size: 28px;
+  font-weight: 600;
+  color: blue;
+  text-shadow: 4px 4px 8px yellow;
+}
+
+.timer-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.timer-container input,
+button {
+  font-size: 22px;
+
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid green;
+  padding: 6px;
+  margin-right: 12px;
+}
+
+.timer-start {
+  margin-bottom: 50px;
+  font-family: inherit;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+}
+
+.value {
+  font-size: 28px;
+}
+
+.label {
+  font-size: 18px;
+}
+
+.form {
+  max-width: 300px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+
+  border-radius: 6px;
+
+}
+
+@keyframes fireEffect {
+  0% {
+    box-shadow:
+      0 0 20px #FF4500,
+      0 0 30px #FF8C00,
+      0 0 40px #FFD700;
+  }
+
+  50% {
+    box-shadow:
+      0 0 25px #FF6347,
+      /* Трохи інші відтінки та інтенсивність */
+      0 0 35px #FFA500,
+      0 0 45px #FFFACD;
+  }
+
+  100% {
+    box-shadow:
+      0 0 20px #FF4500,
+      0 0 30px #FF8C00,
+      0 0 40px #FFD700;
+  }
+}
+
+.fire-border-animated {
+  border: 2px solid #FFA500;
+  animation: fireEffect 1s infinite alternate;
+}
+
+
+.form input {
+  height: 30px;
+}
+
+.form fieldset {
+  margin-top: 12px;
+}
+
+.form button {
+  font-family: inherit;
+  width: 200px;
+  height: 30px;
+  margin-top: 12px;
+  background-color: rgb(177, 219, 125);
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}

@@ -15,20 +15,31 @@
 </head>
 
 <body>
-  <!-- <h1>HOME PAGE</h1> -->
-
 
   <main>
-    <h2 class="title">Домашнє завдання №11</h2>
+    <h1 class="title">Домашнє завдання №11</h1>
+    <form class="form">
+      <label>
+        <input class="input" type="text" name="search-text" placeholder="Search images...">
+        <!-- прибрав - required -->
+      </label>
+      <button class="form-btn" type="submit">Search</button>
+      <div class="loader hidden">
+        <p>Завантаження</p>
+        <!-- <span class="loader"></span> -->
+      </div>
+    </form>
+
+    <div class="container">
+      <ul class="list gallery"></ul>
+    </div>
 
 
-    <!-- <div class="container container-img">
-      <img class="title-img" src="./img/image.jpg" alt="memory" height="500" width="500">
-    </div> -->
+
   </main>
 
 
-  <script src="./main.js"></script>
+  <script src="./main.js" type="module"></script>
 </body>
 
 </html>
